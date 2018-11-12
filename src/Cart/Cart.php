@@ -20,11 +20,10 @@ class Cart
     private $totalAmountAfterDiscounts;
     private $campaignDiscount = 0.0;
     private $couponDiscount = 0.0;
-    private $totalAmountAfterCoupon;
 
-    private static $instance = null;
+    public static $instance = null;
 
-    public static function getInstance()
+    public static function  getInstance()
     {
         if (self::$instance == null) {
             self::$instance = new Cart();
@@ -68,24 +67,6 @@ class Cart
     {
         $this->totalDiscount = $totalDiscount;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getTotalAmountAfterCoupon()
-    {
-        return $this->totalAmountAfterCoupon;
-    }
-
-    /**
-     * @param mixed $totalAmountAfterCoupon
-     */
-    public function setTotalAmountAfterCoupon($totalAmountAfterCoupon)
-    {
-        $this->totalAmountAfterCoupon = $totalAmountAfterCoupon;
-    }
-
-
 
     /**
      * @return float

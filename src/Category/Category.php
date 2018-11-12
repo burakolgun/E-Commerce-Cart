@@ -5,7 +5,6 @@ namespace Category;
 class Category
 {
     private $title;
-
     private $parent;
 
     public function __construct(string $name, Category $parent = null)
@@ -31,7 +30,7 @@ class Category
     }
 
     /**
-     * @return mixed
+     * @return Category
      */
     public function getParent()
     {

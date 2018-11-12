@@ -1,5 +1,7 @@
 <?php
 
+namespace DiscountType;
+
 class DiscountType
 {
     const AMOUNT = "amount";

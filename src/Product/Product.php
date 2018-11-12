@@ -69,7 +69,7 @@ class Product
     }
 
     /**
-     * @return Category | false
+     * @return Category
      */
     public function getCategory()
     {

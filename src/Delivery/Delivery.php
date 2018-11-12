@@ -7,11 +7,13 @@ class Delivery
     const FIXED_COST = 2.99;
     private $costPerDelivery;
     private $costPerProduct;
+    private $fixedCost;
 
-    public function __construct($costPerDelivery, $costPerProduct)
+    public function __construct($costPerDelivery, $costPerProduct, $fixedCost = self::FIXED_COST)
     {
-        $this->costPerDelivery = $costPerDelivery;
-        $this->costPerProduct = $costPerProduct;
+        $this->setCostPerDelivery($costPerDelivery);
+        $this->setCostPerProduct($costPerProduct);
+        $this->setFixedCost($fixedCost);
     }
 
     /**
@@ -44,5 +46,21 @@ class Delivery
     public function setCostPerProduct($costPerProduct)
     {
         $this->costPerProduct = $costPerProduct;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFixedCost()
+    {
+        return $this->fixedCost;
+    }
+
+    /**
+     * @param mixed $fixedCost
+     */
+    public function setFixedCost($fixedCost)
+    {
+        $this->fixedCost = $fixedCost;
     }
 }

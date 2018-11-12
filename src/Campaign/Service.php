@@ -14,7 +14,10 @@ class Service
     {
         $groupedCampaigns = [];
         foreach ($campaigns as $campaign) {
-            is_array($groupedCampaigns[$campaign->getCategory()->getTitle()]) ?: $groupedCampaigns[$campaign->getCategory()->getTitle()] = [];
+            !empty($groupedCampaigns[$campaign->getCategory()->getTitle()]) &&
+            is_array($groupedCampaigns[$campaign->getCategory()->getTitle()]) ?:
+                $groupedCampaigns[$campaign->getCategory()->getTitle()] = [];
+
             $groupedCampaigns[$campaign->getCategory()->getTitle()][] = $campaign;
         }
 

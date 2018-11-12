@@ -3,10 +3,13 @@
 namespace Cart;
 
 use Campaign\Campaign;
+use DiscountType\DiscountType;
 use Product\Product;
 
 class Service
 {
+    public static $appliedDiscount = false;
+
     public function addProductToCart(Product $newItem, $quantity = 1)
     {
         $cart = Cart::getInstance();
@@ -24,7 +27,10 @@ class Service
         if ($isNew) {
             $products = $cart->getProducts();
             $newItem->setQuantity($quantity);
-            is_array($products[$newItem->getCategory()->getTitle()]) ?: $products[$newItem->getCategory()->getTitle()] = [];
+
+            !empty($products[$newItem->getCategory()->getTitle()]) && is_array($products[$newItem->getCategory()->getTitle()]) ?:
+                $products[$newItem->getCategory()->getTitle()] = [];
+
             array_push($products[$newItem->getCategory()->getTitle()], $newItem);
             $cart->setProducts($products);
         }
@@ -118,15 +124,16 @@ class Service
         foreach ($bestCampaigns as $category => $campaign) {
             $totalAmountForThisCategory = $totalAmountsBeforeDiscountByCategory[$category];
 
-            if ($campaign->getDiscountType() === \DiscountType::RATE) {
+            if ($campaign->getDiscountType() === DiscountType::RATE) {
                 $appliedDiscountCategories[$category] = ($totalAmountForThisCategory - ($totalAmountForThisCategory * ($campaign->getDiscount() / 100)));
-            } elseif ($campaign->getDiscountType() === \DiscountType::AMOUNT) {
+            } elseif ($campaign->getDiscountType() === DiscountType::AMOUNT) {
                 $appliedDiscountCategories[$category] = $totalAmountForThisCategory - $campaign->getDiscount();
             }
         }
 
         $cart->setAppliedDiscountByCategories($appliedDiscountCategories);
         $this->calculateTotalAmountAfterDiscount();
+        self::$appliedDiscount = true;
     }
 
     public function calculateTotalAmountAfterCampaign()

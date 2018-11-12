@@ -1,0 +1,8 @@
+# ignore Composer downloads
+/vendor/*
+
+#ignore test results
+/report/*
+
+idea/*
+.idea/*

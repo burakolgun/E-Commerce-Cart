@@ -2,15 +2,18 @@
 
 namespace Delivery;
 
+use Cart\Cart;
+
 class Service
 {
-    public function getDeliveryCost(Delivery $delivery)
+    public static function getDeliveryCost(Delivery $delivery, \Cart\Service $cartService)
     {
-        $cartService = new \Cart\Service();
-
-        return ($delivery->getCostPerDelivery() * $cartService->getCategoryCount()) +
+        Cart::getInstance()->setDeliveryCost(
+            ($delivery->getCostPerDelivery() * $cartService->getCategoryCount()) +
             ($delivery->getCostPerProduct() * $cartService->getProductCount()) +
-            Delivery::FIXED_COST;
-    }
+            $delivery->getFixedCost()
+        );
 
+        return Cart::getInstance()->getDeliveryCost();
+    }
 }

@@ -2,14 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fffb82b2-09d8-4910-be10-22fb3b638d09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.ignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/CampaignTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/CategoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/CouponTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/DeliveryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/DiscountTypeTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/071dd1ce6138caf7225a0a37caf0587cd73e1c5c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/071dd1ce6138caf7225a0a37caf0587cd73e1c5c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b35a8a2fb23124ff98c41f0aa3f08dd6796218e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/6/1654b4577b4496477e4e5cc8a727ff11dcaa22d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3ca7303c2a6ded7a9ee6e80487868be3a8ddb37d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3ca7303c2a6ded7a9ee6e80487868be3a8ddb37d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/ac85e561fcf888882d8a5860a00b156a73ac2e7a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/ac85e561fcf888882d8a5860a00b156a73ac2e7a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Campaign/Campaign.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Campaign/Campaign.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Campaign/Service.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Campaign/Service.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Campaign/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Campaign/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Campaign/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Campaign/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Cart/Cart.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Cart/Cart.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Cart/Service.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Cart/Service.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Cart/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Cart/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Cart/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Cart/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Category/Category.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Category/Category.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Category/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Category/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Category/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Category/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Coupon/Coupon.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Coupon/Coupon.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Coupon/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Coupon/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Coupon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Coupon/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/DiscountType/DiscountType.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/DiscountType/DiscountType.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/DiscountType/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/DiscountType/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/DiscountType/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/DiscountType/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Product/Product.php.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Product/Product.php.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Product/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Product/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Product/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Product/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Campaign/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Campaign/Service.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cart/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart/Cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cart/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cart/Service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Coupon/Amount.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Coupon/Amount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Coupon/ICalculate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Coupon/ICalculate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Coupon/Rate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Coupon/Rate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Category/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Category/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Coupon/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Coupon/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Delivery/Delivery.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delivery/Delivery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Delivery/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Delivery/Service.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DiscountType/DiscountType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DiscountType/DiscountType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helper/Validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ProductTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ProductTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +60,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="CoverageDataManager">
@@ -30,7 +73,8 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -43,6 +87,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="6" />
+          <entry key="ignore" value="1" />
           <entry key="json" value="5" />
           <entry key="php" value="148" />
           <entry key="xml" value="1" />
@@ -53,11 +98,13 @@
           <entry key="HTML" value="6" />
           <entry key="JSON" value="5" />
           <entry key="PHP" value="148" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="ignore" value="51" />
           <entry key="json" value="9" />
           <entry key="php" value="19259" />
           <entry key="xml" value="29" />
@@ -67,6 +114,7 @@
         <counts>
           <entry key="JSON" value="9" />
           <entry key="PHP" value="19259" />
+          <entry key="PLAIN_TEXT" value="51" />
           <entry key="XML" value="29" />
         </counts>
       </usages-collector>
@@ -77,11 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Unit/ProductTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="375">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#30#49#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +134,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Campaign/Campaign.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
+            <state relative-caret-position="1215">
               <caret line="81" column="35" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="35" />
             </state>
           </provider>
@@ -98,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Campaign/Service.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="510">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -107,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
+            <state relative-caret-position="1440">
               <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
             </state>
           </provider>
@@ -116,17 +161,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Coupon/Coupon.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="300">
               <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Coupon/Service.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="360">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.ignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -135,7 +189,7 @@
         <entry file="file://$PROJECT_DIR$/src/Product/Product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
-              <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -153,16 +207,7 @@
         <entry file="file://$PROJECT_DIR$/src/DiscountType/DiscountType.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Helper/Validation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -212,9 +257,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -250,6 +292,7 @@
         <option value="$PROJECT_DIR$/src/Cart/Service.php" />
         <option value="$PROJECT_DIR$/src/Coupon/Service.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/.ignore" />
       </list>
     </option>
   </component>
@@ -313,75 +356,6 @@
             <path>
               <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
               <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Campaign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Cart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Category" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Coupon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Delivery" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DiscountType" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopping-cart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopping-cart" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -467,6 +441,7 @@
       <updated>1541844912148</updated>
       <workItem from="1541844913422" duration="16797000" />
       <workItem from="1541922375829" duration="45398000" />
+      <workItem from="1542045206234" duration="129000" />
     </task>
     <servers />
   </component>
@@ -503,7 +478,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62195000" />
+    <option name="totallyTimeSpent" value="62324000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,7 +493,7 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19169329" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19382322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="0" />
@@ -534,7 +509,7 @@
       <window_info anchor="bottom" id="Gerrit" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="12" sideWeight="0.49946752" weight="0.32908705" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49946752" weight="0.32826748" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.49946752" visible="true" weight="0.32826748" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.5005325" side_tool="true" weight="0.32908705" />
       <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -647,20 +622,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cart/CalculateCoupon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Product/Service.php" />
+    <entry file="file://$PROJECT_DIR$/src/Cart/CalculateCoupon.php" />
     <entry file="file://$PROJECT_DIR$/src/Cart/Cart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2970">
@@ -720,24 +683,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DiscountType/DiscountType.php">
+    <entry file="file://$PROJECT_DIR$/src/Helper/Validation.php" />
+    <entry file="file://$PROJECT_DIR$/tests/Unit/ProductTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="375">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Helper/Validation.php">
+    <entry file="file://$PROJECT_DIR$/src/Campaign/Campaign.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="1215">
+          <caret line="81" column="35" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Campaign/Service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Coupon/Coupon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Product/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -748,48 +733,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/ProductTest.php">
+    <entry file="file://$PROJECT_DIR$/src/DiscountType/DiscountType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#30#49#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Campaign/Campaign.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="81" column="35" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Campaign/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Coupon/Coupon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Coupon/Service.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="360">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>

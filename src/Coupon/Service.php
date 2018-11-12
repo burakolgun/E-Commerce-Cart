@@ -4,6 +4,7 @@ namespace Coupon;
 
 
 use Cart\Cart;
+use DiscountType\DiscountType;
 
 class Service
 {
@@ -18,7 +19,7 @@ class Service
     public function __construct(Coupon $coupon)
     {
         $this->strategy = new Amount();
-        if ($coupon->getDiscountType() === \DiscountType::RATE) {
+        if ($coupon->getDiscountType() === DiscountType::RATE) {
             $this->strategy = new Rate();
         }
 
@@ -26,15 +27,23 @@ class Service
         $this->coupon = $coupon;
     }
 
-    public function applyCoupon()
+    public function applyCoupon(\Cart\Service $cartService)
     {
-        if ($this->cart->getTotalAmountAfterCampaign() >= $this->coupon->getMinimumCartAmount()) {
-            $discount = $this->strategy->calculate($this->cart->getTotalAmountAfterCampaign(), $this->coupon->getDiscount());
-            $this->cart->setTotalAmountAfterDiscounts($this->cart->getTotalAmountAfterCampaign() - $discount);
-            $this->cart->setCouponDiscount($discount);
+        if (\Cart\Service::$appliedDiscount) {
+            if ($this->cart->getTotalAmountAfterCampaign() >= $this->coupon->getMinimumCartAmount()) {
+                $discount = $this->strategy->calculate($this->cart->getTotalAmountAfterCampaign(), $this->coupon->getDiscount());
+                $this->cart->setTotalAmountAfterDiscounts($this->cart->getTotalAmountAfterCampaign() - $discount);
+                $this->cart->setCouponDiscount($discount);
+            }
+
+            $this->calculateAppliedDiscountAfterCouponByCategories();
+
+            return true;
         }
 
-        $this->calculateAppliedDiscountAfterCouponByCategories();
+        $cartService->applyDiscount();
+
+        return $this->applyCoupon($cartService);
     }
 
     public function calculateAppliedDiscountAfterCouponByCategories()
@@ -42,15 +51,15 @@ class Service
         $appliedDiscountsByCategory = $this->cart->getAppliedDiscountByCategories();
         $tempAppliedDiscountsByCategory = [];
 
-        $discount = $this->coupon->getDiscountType() === \DiscountType::AMOUNT ? $this->coupon->getDiscount() / count($this->cart->getProducts()) : $this->coupon->getDiscount();
+        $discount = $this->coupon->getDiscountType() === DiscountType::AMOUNT ?
+            $this->coupon->getDiscount() / count($this->cart->getProducts()) :
+            $this->coupon->getDiscount();
 
         foreach ($this->cart->getProducts() as $category => $products) {
-            if (empty($appliedDiscountsByCategory[$category])) {
-                $tempAppliedDiscountsByCategory[$category] = $this->strategy->calculate($this->cart->getTotalAmountsBeforeDiscountByCategory()[$category], $discount);
-            } else {
-                $tempAppliedDiscountsByCategory[$category] = $this->strategy->calculate($appliedDiscountsByCategory[$category], $discount);
 
-            }
+            $tempAppliedDiscountsByCategory[$category] = empty($appliedDiscountsByCategory[$category]) ?
+                $this->strategy->calculate($this->cart->getTotalAmountsBeforeDiscountByCategory()[$category], $discount) :
+                $this->strategy->calculate($appliedDiscountsByCategory[$category], $discount);
         }
 
         $this->cart->setAppliedDiscountByCategories($tempAppliedDiscountsByCategory);
