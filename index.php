@@ -1,7 +1,6 @@
 <?
 include_once('./src/Category/Category.php');
 include_once('./src/Cart/Cart.php');
-
 include_once('./src/Product/Product.php');
 include_once('./src/Cart/Service.php');
 include_once('./src/DiscountType/DiscountType.php');
@@ -20,9 +19,16 @@ $foodCategory = new \Category\Category('Food');
 $electronicCategory = new \Category\Category('Electronic');
 $mainBoardCategory = new \Category\Category('MainBoard', $electronicCategory);
 $computerCategory = new \Category\Category('Computer');
-$cart = \Cart\Cart::getInstance();
 $discountTypeRate = \DiscountType\DiscountType::RATE;
 $discountTypeAmount = \DiscountType\DiscountType::AMOUNT;
+
+$cart = \Cart\Cart::getInstance();
+$cartService = new \Cart\Service();
+$coupon1 = new \Coupon\Coupon(100, 25, \DiscountType\DiscountType::RATE);
+$foodCampaign2 = new \Campaign\Campaign($foodCategory, 10, 1, $discountTypeRate);
+$electronicCampaign = new \Campaign\Campaign($electronicCategory, 10, 1, $discountTypeRate);
+$mainBoard = new \Campaign\Campaign($mainBoardCategory, 10, 25, $discountTypeRate);
+$computer = new \Campaign\Campaign($computerCategory, 25, 1, $discountTypeRate);
 
 $product = new \Product\Product("Apple", 100, $foodCategory);
 $product6 = new \Product\Product("Fan", 100, $electronicCategory);
@@ -31,11 +37,10 @@ $product8 = new \Product\Product("Asus", 100, $computerCategory);
 $product9 = new \Product\Product("Dell", 100, $computerCategory);
 $product10 = new \Product\Product("Monitor", 100, $electronicCategory);
 $product11 = new \Product\Product("Apple", 100, $foodCategory);
-$product2 = new \Product\Product("Armut", 100, $foodCategory);
-$product3 = new \Product\Product("Muz", 100, $foodCategory);
-$product4 = new \Product\Product("Kayisi", 100, $foodCategory);
+$product2 = new \Product\Product("PineApple", 100, $foodCategory);
+$product3 = new \Product\Product("Banana", 100, $foodCategory);
+$product4 = new \Product\Product("Union", 100, $foodCategory);
 $product5 = new \Product\Product("Asus-MX4c", 100, $mainBoardCategory);
-$cartService = new \Cart\Service();
 
 $cartService->addProductToCart($product);
 $cartService->addProductToCart($product2, 3);
@@ -54,13 +59,6 @@ $cartService->addProductToCart($product9, 5);
 $cartService->addProductToCart($product9, 7);
 $cartService->addProductToCart($product10, 2);
 $cartService->addProductToCart($product11, 1);
-
-$coupon1 = new \Coupon\Coupon(100, 25, \DiscountType\DiscountType::RATE);
-
-$foodCampaign2 = new \Campaign\Campaign($foodCategory, 10, 1, $discountTypeRate);
-$electronicCampaign = new \Campaign\Campaign($electronicCategory, 10, 1, $discountTypeRate);
-$mainBoard = new \Campaign\Campaign($mainBoardCategory, 10, 25, $discountTypeRate);
-$computer = new \Campaign\Campaign($computerCategory, 25, 1, $discountTypeRate);
 
 $cartService->applyDiscount($electronicCampaign, $mainBoard, $foodCampaign2, $computer);
 
