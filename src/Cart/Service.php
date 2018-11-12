@@ -34,7 +34,6 @@ class Service
 
     public function addQuantityToProduct(Product $product, $quantity)
     {
-        echo $product->getQuantity();
         $product->setQuantity($product->getQuantity() + $quantity);
     }
 
@@ -53,16 +52,23 @@ class Service
         return $totalAmount;
     }
 
-    public function getTotalAmountBeforeDiscountByCategory($category)
+    public function getTotalAmountBeforeDiscountByCategory()
     {
         $cart = Cart::getInstance();
-        $totalAmounts = 0;
+        $totalAmountsWithCategories = [];
 
-        foreach ($cart->getProducts()[$category] as $product) {
-            $totalAmounts += $product->getQuantity() * $product->getPrice();
+        foreach ($cart->getProducts() as $category => $products) {
+            $totalAmounts = 0;
+            foreach ($products as $product) {
+                $totalAmounts += $product->getQuantity() * $product->getPrice();
+            }
+
+            $totalAmountsWithCategories[$category] = $totalAmounts;
         }
 
-        return $totalAmounts;
+        $cart->setTotalAmountsBeforeDiscountByCategory($totalAmountsWithCategories);
+
+        return $cart->getTotalAmountsBeforeDiscountByCategory();
     }
 
     public function calculateTotalAmountAfterDiscount()
@@ -107,9 +113,10 @@ class Service
         $bestCampaigns = \Campaign\Service::getBestCampaigns($allowedCampaigns);
 
         $appliedDiscountCategories = [];
+        $totalAmountsBeforeDiscountByCategory = $this->getTotalAmountBeforeDiscountByCategory();
 
         foreach ($bestCampaigns as $category => $campaign) {
-            $totalAmountForThisCategory = $this->getTotalAmountBeforeDiscountByCategory($category);
+            $totalAmountForThisCategory = $totalAmountsBeforeDiscountByCategory[$category];
 
             if ($campaign->getDiscountType() === \DiscountType::RATE) {
                 $appliedDiscountCategories[$category] = ($totalAmountForThisCategory - ($totalAmountForThisCategory * ($campaign->getDiscount() / 100)));

@@ -15,6 +15,7 @@ class Cart
     private $deliveryCost = 0.0;
     private $appliedDiscount;
     private $appliedDiscountByCategories = [];
+    private $totalAmountsBeforeDiscountByCategory = [];
     private $totalAmountAfterCampaign;
     private $totalAmountAfterDiscounts;
     private $campaignDiscount = 0.0;
@@ -196,5 +197,21 @@ class Cart
     public function setCouponDiscount(float $couponDiscount)
     {
         $this->couponDiscount = $couponDiscount;
+    }
+
+    /**
+     * @return array
+     */
+    public function getTotalAmountsBeforeDiscountByCategory(): array
+    {
+        return $this->totalAmountsBeforeDiscountByCategory;
+    }
+
+    /**
+     * @param array $totalAmountsBeforeDiscountByCategory
+     */
+    public function setTotalAmountsBeforeDiscountByCategory(array $totalAmountsBeforeDiscountByCategory)
+    {
+        $this->totalAmountsBeforeDiscountByCategory = $totalAmountsBeforeDiscountByCategory;
     }
 }

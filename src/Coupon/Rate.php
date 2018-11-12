@@ -2,12 +2,10 @@
 
 namespace Coupon;
 
-use Cart\Cart;
-
 class Rate implements ICalculate
 {
-    public function applyCoupon(Cart $cart, $discount)
+    public function calculate($totalAmount, $discount)
     {
-        return $cart->getTotalAmountAfterCampaign() * ($discount / 100);
+        return $totalAmount * ($discount / 100);
     }
 }

@@ -2,13 +2,10 @@
 
 namespace Coupon;
 
-
-use Cart\Cart;
-
 class Amount implements ICalculate
 {
-    public function applyCoupon(Cart $cart, $discount)
+    public function calculate($totalAmount, $discount)
     {
-        return $cart->getTotalAmountAfterCampaign() - $discount;
+        return $discount;
     }
 }
