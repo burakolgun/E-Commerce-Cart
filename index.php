@@ -68,7 +68,7 @@ $couponService->applyCoupon($cartService);
 
 $delivery = new \Delivery\Delivery(10, 10);
 
-$table = '<table>';
+$table = '<table cellpadding="10" border="1" bordercolor="gray">';
 $table .= '<tr>';
 $table .= '<th> Category Name </th>';
 $table .= '<th> Product Name </th>';
@@ -100,7 +100,9 @@ foreach ($cart->getProducts() as $category => $productList) {
     }
 }
 
+$table .= '<tr> <th> TOTAL AMOUNT </th> <th> DELIVERY COST </th> </tr>';
+$table .= '<tr> <td> ' . $cart->getTotalAmountAfterDiscounts() . ' </td> <td> ' .
+    \Delivery\Service::getDeliveryCost($delivery, $cartService) . ' </td> </tr>';
 $table .= '</table>';
 
 echo $table;
-echo '<pre>' . "TOTAL AMOUNT && DELIVERY COST " . var_export($cart->getTotalAmountAfterDiscounts() . ' - ' . \Delivery\Service::getDeliveryCost($delivery, $cartService) , true) . '</pre>';
