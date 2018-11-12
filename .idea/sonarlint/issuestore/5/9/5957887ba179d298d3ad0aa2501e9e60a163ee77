@@ -1,0 +1,5 @@
+
+e	php:S1142Ï"OReduce the number of returns of this function 4, down to the maximum allowed 3.(Ê¯üÆ
+	php:S1448+"gClass "ClassLoader" has 21 methods, which is greater than 20 authorized. Split it into smaller classes.(ôÈì·üÿÿÿÿ
+j	php:S1142ò"OReduce the number of returns of this function 6, down to the maximum allowed 3.(£ûŒ¯øÿÿÿÿ
+o	php:S3776ò"TRefactor this function to reduce its Cognitive Complexity from 40 to the 15 allowed.(£ûŒ¯øÿÿÿÿ
