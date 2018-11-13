@@ -10,7 +10,7 @@
 ### How I run this project?
 * $php -S localhost:port
 
-###How I run tests?
+### How I run tests?
 * $composer test
 
 ### How I see coverage report?
